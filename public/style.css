@@ -1,0 +1,89 @@
+:root {
+   --beige: #f4ece1;
+   --yellow: #e5c95c;
+   --black: #252928;
+   --red: #fb6332;
+   --white: #FFF;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Layout Styling */
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   background-color: var(--beige);
+}
+
+.wrapper {
+   max-width: 100rem;
+   margin: 0 auto;
+}
+
+/* Typography */
+.h1 {
+   font-size: clamp(4rem, 10vw, 12rem);
+   font-weight: 900;
+   padding: 0 0 .2em;
+   color: var(--black);
+}
+
+.ingress {
+   font-size: 2rem;
+   font-weight: 500;
+   color: var(--black);
+}
+
+/* Movie Section */
+.movie-section {
+  position: relative;
+}
+
+.movie-header {
+   display: grid;
+   place-items: center;
+   padding: 10rem 10rem 16rem;
+   background-color: var(--yellow);
+   border-bottom: 2px solid var(--black);
+}
+
+.movie-results {
+   margin-top: -6rem;
+   padding: 0 10rem;
+}
+
+/* Search Form */
+.search-form {
+   display: flex;
+   border: 2px solid var(--black);
+   border-bottom: none;
+}
+
+.search-form-input {
+   flex: 1 1 0px;
+   appearance: none;
+   padding: 2rem;
+   font-family: inherit;
+   background-color: var(--white);
+   color: var(--black);
+   border: none;
+}
+
+.search-form-button {
+   appearance: none;
+   padding: 2rem 5rem;
+   font-size: 1.4rem;
+   font-weight: 600;
+   background-color: var(--black);
+   color: var(--white);
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   border: none;
+}
